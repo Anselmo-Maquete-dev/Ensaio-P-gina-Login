@@ -1,0 +1,173 @@
+/*Resetando os estilos*/
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-decoration:none;
+    box-sizing:border-box;
+    font-family: "Ubuntu";
+}
+
+/*Estilos gerais*/
+.section{
+    float: left;
+    width: 100%;
+}
+.content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section.body{
+    display: flex;
+    align-items: center;
+}
+
+/*Formulario*/
+.form{
+    display:flex;
+    flex-direction: column;
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    margin: 0 30%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+}
+span{
+        margin: 0 0 5% 0;
+        font-size: 1.5em;
+    }
+    .formulario>input, button{
+        width: 100%;
+        padding: 4% 0;
+        margin: 0 0 5% 0;
+        border-radius: 16px;
+        border: 1px solid grey;
+    }
+.icones i{
+    font-size:2em;
+    margin: 0 2% 5% 0;
+}
+button{
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: #eec120;
+    transition: ease-in 350ms all
+}
+button:hover{
+    cursor:pointer;
+    background-color: white;
+}
+.rodape{
+    text-align:center;
+    margin: 5% 0 0 0;
+    font-size 5px;
+}
+
+/*Conteudo*/
+.content.fundo{
+    background-image: linear-gradient(rgba(0,0,0,0.110),rgba(0,0,0,0.25)), url(fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.conteudo_inicio{
+    text-align: center;
+    padding: 50% 0;
+    color:white;
+    font-weight: bolder;
+}
+.conteudo_inicio>h1{
+    font-size: 4em;
+    margin: 0 0 3% 0;
+}
+
+/*Breakpoints ou Responsividade*/
+/*Desktop*/
+@media (min-width: 903.5px){
+    .titulo_formulario{
+        display: none;
+    }
+}
+/*Mobile e Tablet*/
+@media all and (min-width: 645px) and (max-width: 1759px){
+    .conteudo_inicio{
+        padding: 60% 0;
+    }
+}
+@media all and (min-width: 645px) and (max-width: 1332px){
+    .conteudo_inicio{
+        padding: 70% 0;
+    }
+}
+@media all and (min-width: 645px) and (max-width: 1127px){
+    .conteudo_inicio{
+        padding: 80% 0;
+    }
+}
+@media all and (min-width: 645px) and (max-width: 1010px){
+    .conteudo_inicio{
+        padding: 90% 0;
+    }
+}
+@media all and (min-width: 645px) and (max-width: 804px){
+    .conteudo_inicio{
+        padding: 100% 0;
+    }
+}
+@media all and (min-width: 645px) and (max-width: 730px){
+    .conteudo_inicio{
+        padding: 110% 0;
+    }
+}
+
+@media all and (max-width: 903px){
+    .fundo{
+        display: none;
+    }
+    
+    .section.body{
+        background-image: linear-gradient(rgba(0,0,0,0.110),rgba(0,0,0,0.25)), url(fundo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        margin: 0 0 0 0;
+        background: rgba(255,255,255,0.16);
+        background: rgba(255,255,255,0.17);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(12.2px);
+        border: 1px solid rgba(255,255,255,0.15);
+        font-weight: bolder;
+    }
+    span{
+        margin: 0 0 5% 0;
+        font-size: 1.5em;
+    }
+    .formulario>input, button, div{
+        width: 100%;
+        padding: 4% 0;
+        margin: 0 0 5% 0;
+        border-radius: 16px;
+        border: none;
+    }
+    .titulo_formulario{
+        margin: 0 0 5% 0;
+    }
+}
